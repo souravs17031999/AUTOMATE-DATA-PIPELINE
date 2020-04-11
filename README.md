@@ -30,8 +30,14 @@ Without data, we can't model our problem and do analysis of it.
 
 * After getting the credentials , we can now run the script for automation.   
 
+* With Tkinter GUI : 
+```data_automation.py```         
+and arguments can be put down using interactive GUI.    
+
+* Simple CMD solution :   
+
 > Example :     
-* Firstly, open the [script file](https://github.com/souravs17031999/Automate-images-download/blob/master/automate_images_download.py) and edit the sender_email, receiver_email and password available under main_run() function directly in the file (for privacy reasons).   
+* Firstly, open the [script file](https://github.com/souravs17031999/AUTOMATE-DATA-PIPELINE).      
 * Run Command prompt (or terminal).    
 * Move to the directory where script is downloaded.    
 * Now run the script in following way :     
@@ -41,16 +47,16 @@ positional arguments:
 | ------------- | ------------- |
 | dir_path | Output working directory |  
 | query | Query string to search for |
-| API | API KEY FOR GOOGLE CUSTOM SEARCH API |
+| KEY | API KEY FOR GOOGLE CUSTOM SEARCH API |
 | CX | CUSTOM SEARCH ENGINE ID  |
-| imgSize | Size of image [icon/small/medium/large/xlarge/xxlarge/huge] |
-| imgType | Type of image[clipart/face/lineart/stock/photo/animated] |
-| imgColorType | Color of image[color/gray/mono] |     
+| sender_email | sender_email |
+| receiver_email | receiver_email |
+| password | password for email sending |     
 
 optional arguments:         
   -h, --help  :  show this help message and exit     
   
-```script_images_download.py C:/Users/DELL/Desktop "query" API CX huge photo color```      
+```automate_images_download_cmd.py C:/Users/DELL/Desktop "query" API CX sender_email receiver_email password```      
 
 ![output](/images/output1.JPG)       
 
