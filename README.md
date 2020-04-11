@@ -28,10 +28,11 @@ Without data, we can't model our problem and do analysis of it.
 
 # Getting Started Locally : 
 
-* After getting the credentials , we can now run the script for automation.   
+* After getting the credentials , we can now run the script for automation.  
+* Firstly download all the files on your system using cmd (terminal) or git bash :
+```git clone https://github.com/souravs17031999/AUTOMATE-DATA-PIPELINE```   
 
 ## With Tkinter GUI : 
-* Run Command prompt (or terminal).    
 * Move to the directory where script is downloaded.    
 * Now run the script in following way :  
 ```python data_automation.py```         
@@ -41,7 +42,6 @@ and arguments can be put down using interactive GUI.
 ## Simple CMD solution :   
 
 > Example :     
-* Run Command prompt (or terminal).    
 * Move to the directory where script is downloaded.    
 * Now run the script in following way :     
 
