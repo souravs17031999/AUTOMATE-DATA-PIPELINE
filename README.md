@@ -64,7 +64,7 @@ optional arguments:
 ![output](/images/output1.JPG)       
 
 # Output :    
-* All images (100 per call to script, can be changed from script) will be directly downloaded at new directory created : 'dataset_images'.
+* All images (100 per call to script, can be changed from script) will be directly downloaded at new directory created : 'sourav_images' (can be changed in the script).     
 > Some samples of images : 
 ![output](/images/output5.JPG)         
 ![output](/images/output6.JPG)         
