@@ -11,7 +11,7 @@ Without data, we can't model our problem and do analysis of it.
 
 # Getting credentials from Google Custom Search API :   
 
-> Get the detailed steps and some troubleshooting help [here](https://github.com/souravs17031999/Automate-images-download/blob/master/google_api.txt).
+> Get the detailed steps and some troubleshooting help [here](https://github.com/souravs17031999/AUTOMATE-DATA-PIPELINE/blob/master/google_api.txt).
 
 * First, Create a [Gmail account](http://gmail.com/) for developement (or testing).
 * Next , head on to [google developers console](https://console.developers.google.com/) and follow the steps below to create the new project (if you don't have any), you can skip this step if you already have some running project.     
@@ -29,7 +29,7 @@ Without data, we can't model our problem and do analysis of it.
 # Getting Started Locally : 
 
 * After getting the credentials , we can now run the script for automation.  
-* Firstly download all the files on your system using cmd (terminal) or git bash :
+* Firstly download all the files on your system using cmd (terminal) or git bash :     
 ```git clone https://github.com/souravs17031999/AUTOMATE-DATA-PIPELINE```   
 
 ## With Tkinter GUI : 
