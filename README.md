@@ -57,6 +57,8 @@ optional arguments:
 # Output :    
 * All images (100 per call to script, can be changed from script) will be directly downloaded at new directory created : 'dataset_images'.
 > Some samples of images : 
+![output](/images/output5.JPG)         
+![output](/images/output6.JPG)         
 ![output](/images/output2.JPG)         
 ![output](/images/output3.JPG)    
 ![output](/images/output4.JPG)          
