@@ -30,14 +30,17 @@ Without data, we can't model our problem and do analysis of it.
 
 * After getting the credentials , we can now run the script for automation.   
 
-* With Tkinter GUI : 
-```data_automation.py```         
-and arguments can be put down using interactive GUI.    
+## With Tkinter GUI : 
+* Run Command prompt (or terminal).    
+* Move to the directory where script is downloaded.    
+* Now run the script in following way :  
+```python data_automation.py```         
+and arguments can be put down using interactive GUI. 
 
-* Simple CMD solution :   
+
+## Simple CMD solution :   
 
 > Example :     
-* Firstly, open the [script file](https://github.com/souravs17031999/AUTOMATE-DATA-PIPELINE).      
 * Run Command prompt (or terminal).    
 * Move to the directory where script is downloaded.    
 * Now run the script in following way :     
@@ -56,7 +59,7 @@ positional arguments:
 optional arguments:         
   -h, --help  :  show this help message and exit     
   
-```automate_images_download_cmd.py C:/Users/DELL/Desktop "query" API CX sender_email receiver_email password```      
+```python automate_images_download_cmd.py C:/Users/DELL/Desktop "query" API CX sender_email receiver_email password```      
 
 ![output](/images/output1.JPG)       
 
