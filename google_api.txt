@@ -1,0 +1,32 @@
+# STEPS FOR CREATING CREDENTIALS FOR GOOGLE CUSTOM SEARCH API 
+------------------------------------------
+* Create google account for developement 
+* Create a new project first from developers console if there is no existing project
+* Visit https://cse.google.com/cse/all to create custom search engine using one of your already existing websites (portfolio or blog or any other)
+* Now set "image search" option to "ON"
+* set the option to "search the entire web" to "ON"
+* copy the "search engine ID" and keep it safe 
+*  go to "API explorer" by opening "developer console"
+* Click on "enable API's and service" and choose "GOOGLE CUSTOM SEARCH API" and enable it if not already enabled 
+* Then , click on credentials on left side of console and then create new credentials which gives "API keys"
+* copy it and keep it safe.
+
+---------------------------------------------
+
+* Now, we are ready to fire our API using requests (GET OR POST)
+* API parameters required are explained below :
+fire requests to below link to make request to API : 
+
+- > "https://www.googleapis.com/customsearch/v1?[parameters]"
+
+Now, parameters are described by using "&" infront of them like
+GET https://www.googleapis.com/customsearch/v1?key=INSERT_YOUR_API_KEY&cx=017576662512468239146:omuauf_lfve&q=lectures
+
+Here, key is API key, cx is search engine id, and query is string for which to search for 
+
+Modify this more for more search functionlities here : https://developers.google.com/custom-search/v1/using_rest
+------------------------------------------------
+
+* If API limit reached error shows, then simply create new project and with new Credentials (API keys) , keeping custom search 
+engine id same .
+Generally the limit is 100 requests per day.
