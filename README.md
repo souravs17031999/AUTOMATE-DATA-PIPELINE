@@ -21,11 +21,21 @@ Without data, we can't model our problem and do analysis of it.
 * Firstly download all the files on your system using cmd (terminal) or git bash :     
 ```git clone https://github.com/souravs17031999/AUTOMATE-DATA-PIPELINE```   
 
-## With Tkinter GUI : 
+## With Tkinter GUI :    
+### For IMAGES : 
 * Move to the directory where script is downloaded.    
 * Now run the script in following way :  
 ```python data_image_automation.py```          
-and arguments can be passed from interactive GUI.         
+and arguments can be passed from interactive GUI.           
+
+### For VIDEOS :  
+* Move to the directory where script is downloaded.    
+* Now run the script in following way :  
+```python data_video_automation.py```          
+and arguments can be passed from interactive GUI.        
+Note : Two important args :         
+> Client secrets file path: Give absolute path.    
+> Chrome driver path : Give absolute path with .exe extension.   
 
 # Output :       
 > Some samples of images :
