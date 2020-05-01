@@ -41,20 +41,23 @@ class automate_images_download:
             print("Image scraping using Google Custom Image Search Engine API....")
             print("Making 10 requests at a time , total of 100 requests in one Go !")
             urls = []
-            for i in range(0, 100, 10):
+            print("FETCHING...")
+            for i in tqdm(range(0, 100, 10)):
                 try:
                     source = requests.get(f'https://www.googleapis.com/customsearch/v1?key={KEY}&cx={CX}&q={query}&searchType=image&num=10&start={i}').text
+                    content = json.loads(source)
+                    total_length = len(content['items'])
                 except Exception as error:
-                    print("API ERROR , REQUEST LIMIT REACHED !")
+                    print("API ERROR , EITHER CREDENTIALS FAILED OR REQUEST LIMIT REACHED !")
                     return
-                content = json.loads(source)
-                total_length = len(content['items'])
                 for i in range(0, total_length):
                     try:
                         urls.append(content['items'][i]['link'])
                     except Exception as e:
                         pass
+                print('\r', end="")
 
+            print()
             # links are referencing the same urls , just giving convinient name to avoid confusion
             links = urls
             os.mkdir(dir_path)
@@ -95,7 +98,7 @@ class automate_images_download:
     def resize_images(self, dir_path):
         # resizing every image by 50% using pillow library
         print("Starting Resizing images one by one....")
-        for i in range(0, 100):
+        for i in tqdm(range(0, 100)):
             try:
                 full_path_open = dir_path + f"/image{i}" + ".png"
                 image = Image.open(full_path_open)
@@ -104,12 +107,14 @@ class automate_images_download:
                 image.save(full_path_open)
             except Exception as e:
                 pass
+
+            print('\r', end="")
         print("All images resized succesfully !")
 
     # function for converting images to grayscale
     def convert_images(self, dir_path):
         print("Starting conversion of images to GreyScale one by one....")
-        for i in range(0, 100):
+        for i in tqdm(range(0, 100)):
             try:
                 full_path_open = dir_path + f"/image{i}" + ".png"
                 image = Image.open(full_path_open)
@@ -117,10 +122,12 @@ class automate_images_download:
                 image.save(full_path_open)
             except Exception as e:
                 pass
+            print('\r', end="")
         print("All images converted to GreyScale succesfully !")
 
     # function for zipping the files one by one
     def zip_images(self, dir_path):
+        print("Zipping downloaded files...")
         file_paths = []
         for root, directories, files in os.walk(dir_path):
             for filename in files:
@@ -181,19 +188,18 @@ class automate_images_download:
             print("Mail sent succesfully !")
 
     # main controlling function of the software
-    def main_run(self, dir_path, query, KEY, CX):
-        # zipped_path = dir_path+'/images.zip'
-        # sender_email = sender_email
-        # receiver_email = receiver_email
-        # subject = "An email with attachment from Python"
-        # body = f"This is an email with zipped attachment of 100 images downloaded according to given query :  {query}"
-        # password = password
+    def main_run_download(self, dir_path, query, KEY, CX):
         self.download_images(dir_path, query, KEY, CX)
 
-        # self.resize_images(dir_path)
-        # self.convert_images(dir_path)
-        # self.zip_images(dir_path)
-        # self.sent_mail(zipped_path, subject, body, sender_email, receiver_email, password)
+    def main_run_mail(self, query, dir_path, sender_email, receiver_email, password):
+        self.resize_images(dir_path)
+        self.convert_images(dir_path)
+        self.zip_images(dir_path)
+        zipped_path = dir_path+'/images.zip'
+        subject = "This is mail from sourav kumar"
+        body = f"Following is the attachment which you have requested on your query : {query}"
+        self.sent_mail(zipped_path, subject, body, sender_email, receiver_email, password)
+
 
 # if __name__ == '__main__':
     # print("WELCOME TO AUTOMATING GOOGLE IMAGES DOWNLOAD")
