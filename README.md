@@ -36,7 +36,7 @@ Without data, we can't model our problem and do analysis of it.
 ## With Tkinter GUI : 
 * Move to the directory where script is downloaded.    
 * Now run the script in following way :  
-```python data_automation.py```          
+```python data_image_automation.py```          
 and arguments can be passed from interactive GUI.         
 
 # Output :       
