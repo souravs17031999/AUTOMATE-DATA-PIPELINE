@@ -39,7 +39,8 @@ Without data, we can't model our problem and do analysis of it.
 and arguments can be passed from interactive GUI.         
 
 # Output :       
-> Some samples of images : 
+> Some samples of images :
+![output](/images/output5.JPG)         
 ![output](/images/output6.JPG)         
 ![output](/images/output2.JPG)         
 ![output](/images/output4.JPG)          
