@@ -62,11 +62,11 @@ box1 = Entry(root, textvariable = box1_string, font='Helvetica')
 box1.grid(row=1, column=2)
 
 box2_string =tk.StringVar(root)
-box2 = Entry(root, textvariable = box2_string, show='*', font='Helvetica')
+box2 = Entry(root, textvariable = box2_string, font='Helvetica')
 box2.grid(row=2, column=2)
 
 box3_string =tk.StringVar(root)
-box3 = Entry(root, textvariable = box3_string, show='*', font='Helvetica')
+box3 = Entry(root, textvariable = box3_string, font='Helvetica')
 box3.grid(row=3, column=2)
 
 box4_string =tk.StringVar(root)
@@ -78,15 +78,15 @@ box5 = Entry(root, textvariable = box5_string, font='Helvetica')
 box5.grid(row=5, column=2)
 
 box6_string =tk.StringVar(root)
-box6 = Entry(root, textvariable = box6_string, font='Helvetica')
+box6 = Entry(root, textvariable = box6_string, show = '*', font='Helvetica')
 box6.grid(row=6, column=2)
 
 box7_string =tk.StringVar(root)
-box7 = Entry(root, textvariable = box7_string, show='*', font='Helvetica')
+box7 = Entry(root, textvariable = box7_string, font='Helvetica')
 box7.grid(row=7, column=2)
 
 box8_string =tk.StringVar(root)
-box8 = Entry(root, textvariable = box8_string, show='*', font='Helvetica')
+box8 = Entry(root, textvariable = box8_string, font='Helvetica')
 box8.grid(row=8, column=2)
 
 box9_string =tk.StringVar(root)
