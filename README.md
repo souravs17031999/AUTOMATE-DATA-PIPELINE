@@ -1,4 +1,4 @@
-# Automate-images-download
+# Automate-Images + Videos-download
 
 # Introduction :   
 Data collection is one of the important steps in Data analysis , Machine learning and Deep learning.
@@ -6,8 +6,9 @@ It is the process of gathering information of our interest, in our case it's the
 Without data, we can't model our problem and do analysis of it.  
 
 # Objective :
-👉 Automate the downloading of images using Google Custom search API.   
-👉 Optional : Resizing the images, Zipping the images and Sending a mail to yourself.    
+👉 Automate the collection and building of images using Google API's for search and videos using Youtube API's.            
+👉 Option to send mails to anyone containing collected datasets as attachment.       
+
 
 # Getting credentials from Google Custom Search API :   
 
@@ -35,40 +36,20 @@ Without data, we can't model our problem and do analysis of it.
 ## With Tkinter GUI : 
 * Move to the directory where script is downloaded.    
 * Now run the script in following way :  
-```python data_automation.py```         
-and arguments can be put down using interactive GUI. 
+```python data_image_automation.py```          
+and arguments can be passed from interactive GUI.         
 
-
-## Simple CMD solution :   
-
-> Example :     
-* Move to the directory where script is downloaded.    
-* Now run the script in following way :     
-
-positional arguments:   
-| arguments  | details |
-| ------------- | ------------- |
-| dir_path | Output working directory |  
-| query | Query string to search for |
-| KEY | API KEY FOR GOOGLE CUSTOM SEARCH API |
-| CX | CUSTOM SEARCH ENGINE ID  |
-| sender_email | sender_email |
-| receiver_email | receiver_email |
-| password | password for email sending |     
-
-optional arguments:         
-  -h, --help  :  show this help message and exit     
-  
-```python automate_images_download_cmd.py C:/Users/DELL/Desktop "query" API CX sender_email receiver_email password```      
-
-![output](/images/output1.JPG)       
-
-# Output :    
-* All images (100 per call to script, can be changed from script) will be directly downloaded at new directory created : 'sourav_images' (can be changed in the script).     
-> Some samples of images : 
+# Output :       
+> Some samples of images :
 ![output](/images/output5.JPG)         
 ![output](/images/output6.JPG)         
 ![output](/images/output2.JPG)         
-![output](/images/output3.JPG)    
 ![output](/images/output4.JPG)          
 
+
+### Limitations and Scope for future work:  
+There are few limitations :   
+* Currently Google and Youtube allows 100 requests in one API call and so the script is able to download in total 100API's in one go but this behaviour can be changed from the script by calling it multiple times after tweaking some parameters which controls the after and before id's of returned images and videos and can be checked in their API documentation.        
+* Considering big file sizes for sending as mails, i have resized , gray-scaled and then zipped the files and upload as attachment.    
+This behaviour can be changed from the script by disabling some of the functions passing a optional parameter.  
+* Also, mail can be only sent for GMAIL users as of now, this can also be changed by manipulating the Ports of all email servers and controlling their behaviours in the script.   
