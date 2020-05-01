@@ -12,3 +12,6 @@
 * Create Google Custom search engine [here](https://cse.google.com/cse/all) which will search and return the results.
 
 ![api3](/images/API3.gif)
+
+> Getting troubleshoot [help](https://github.com/souravs17031999/AUTOMATE-DATA-PIPELINE/blob/master/google_api.txt)    
+> For more help, [API docs](https://developers.google.com/custom-search/v1/reference/rest)
