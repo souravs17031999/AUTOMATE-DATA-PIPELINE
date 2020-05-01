@@ -18,7 +18,6 @@ from tqdm import tqdm
 # IMPORTANT note----------------------------------------------------------
 # STEPS FOR CREATING AND USING GOOGLE CUSTOM SEARCH API Has been written in
 # google_api.txt
-# * Chrome driver should be downloaded for selenium from : https://chromedriver.chromium.org/downloads
 #--------------------------------------------------------------------------
 
 # Main class for the methods defined for the complete software
