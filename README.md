@@ -10,9 +10,10 @@ Without data, we can't model our problem and do analysis of it.
 👉 Option to send mails to anyone containing collected datasets as attachment.       
 
 
-# Getting credentials from Google Custom Search API :   
+# Getting credentials for Google API and Youtube API:   
 
-> Get the detailed steps and some troubleshooting help [images_here](https://github.com/souravs17031999/AUTOMATE-DATA-PIPELINE/blob/master/google_api.txt) and [videos_here].     
+> For [Google image API](https://github.com/souravs17031999/AUTOMATE-DATA-PIPELINE/blob/master/Google_API_images.md)
+> For [Youtube API]()
 
 # Getting Started Locally : 
 
