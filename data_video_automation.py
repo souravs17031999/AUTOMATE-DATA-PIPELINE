@@ -6,7 +6,7 @@ import re
 import requests
 import os
 
-from automate_images_download import automate_images_download
+from automate_videos_download import automate_videos_download
 
 root=Tk()
 root.geometry('900x700')
