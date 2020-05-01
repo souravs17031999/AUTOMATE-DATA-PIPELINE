@@ -1,4 +1,4 @@
-# Automate-images-download
+# Automate-Images + Videos-download
 
 # Introduction :   
 Data collection is one of the important steps in Data analysis , Machine learning and Deep learning.
