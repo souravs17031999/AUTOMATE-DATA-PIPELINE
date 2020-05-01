@@ -1,0 +1,24 @@
+# STEPS FOR CREATING CREDENTIALS FOR YouTube Data API v3
+-------------------------------------
+* Create a google account for developement 
+* Create a new project first from developers console if there is no existing project
+* Go to API explorer from developers console
+* enabe "YouTube Data API v3"
+* Authenticate first from "OAuth consent screen" configuration from left side of console 
+* Then come to "credentials" , create credentials by selecting "OAuth client ID " , then download the client secrets file and copy the 
+API key and keep it safe
+-----------------------------------------
+
+* Now, we can fire the API
+* Here we are using Google-Oauthlib-flow library for making authorization flow easier 
+* keep the clients secrets file in the same directory of the project and copy the exact path and use it in the function provided 
+in the project named "main" as parameters and everything else including authorization is automated through web.
+Only at the last step , we need to ctrl + v so that we can simply paste the already copied token from clipboard and then press 
+enter , authorization will be completed.
+* For controlling other parameters : 
+we have to modify the "main" funciton itself.
+https://developers.google.com/youtube/v3/docs/search/list
+
+----------------------------------------------
+* The code for authorization can also be found at : https://developers.google.com/youtube/v3/docs/search/list 
+from try this API explorer opened on right side of webpage, just maximize the window and the select the code language appropriate and copy it.
