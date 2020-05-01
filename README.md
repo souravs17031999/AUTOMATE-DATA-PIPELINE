@@ -47,8 +47,9 @@ and arguments can be passed from interactive GUI.
 ![output](/images/output4.JPG)          
 
 
-### Limitations :  
+### Limitations and Scope for future work:  
 There are few limitations :   
 * Currently Google and Youtube allows 100 requests in one API call and so the script is able to download in total 100API's in one go but this behaviour can be changed from the script by calling it multiple times after tweaking some parameters which controls the after and before id's of returned images and videos and can be checked in their API documentation.        
 * Considering big file sizes for sending as mails, i have resized , gray-scaled and then zipped the files and upload as attachment.    
-This behaviour can be changed from the script by disabling some of the functions passing a optional parameter.       
+This behaviour can be changed from the script by disabling some of the functions passing a optional parameter.  
+* Also, mail can be only sent for GMAIL users as of now, this can also be changed by manipulating the Ports of all email servers and controlling their behaviours in the script.   
