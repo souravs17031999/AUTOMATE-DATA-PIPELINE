@@ -6,8 +6,9 @@ It is the process of gathering information of our interest, in our case it's the
 Without data, we can't model our problem and do analysis of it.  
 
 # Objective :
-👉 Automate the downloading of images using Google Custom search API.   
-👉 Optional : Resizing the images, Zipping the images and Sending a mail to yourself.    
+👉 Automate the collection and building of images using Google API's for search and videos using Youtube API's.            
+👉 Option to send mails to anyone containing collected datasets as attachment.       
+
 
 # Getting credentials from Google Custom Search API :   
 
@@ -45,3 +46,9 @@ and arguments can be passed from interactive GUI.
 ![output](/images/output2.JPG)         
 ![output](/images/output4.JPG)          
 
+
+### Limitations :  
+There are few limitations :   
+* Currently Google and Youtube allows 100 requests in one API call and so the script is able to download in total 100API's in one go but this behaviour can be changed from the script by calling it multiple times after tweaking some parameters which controls the after and before id's of returned images and videos and can be checked in their API documentation.        
+* Considering big file sizes for sending as mails, i have resized , gray-scaled and then zipped the files and upload as attachment.    
+This behaviour can be changed from the script by disabling some of the functions passing a optional parameter.       
