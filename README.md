@@ -2,8 +2,9 @@
 
 # Introduction :   
 Data collection is one of the important steps in Data analysis , Machine learning and Deep learning.
-It is the process of gathering information of our interest, in our case it's the images of any type we want to gather.
-Without data, we can't model our problem and do analysis of it.  
+It is the process of gathering information of our interest, in our case it's the images and videos of any type we want to gather.
+Without data, we can't model our problem and do analysis of it.     
+Collecting data in a format applicable for ML and DL workflows is also quite useful in the long run.           
 
 # Objective :
 👉 Automate the collection and building of images using Google API's for search and videos using Youtube API's.            
