@@ -55,3 +55,8 @@ This behaviour can be changed from the script by disabling some of the functions
 * [For videos] Considering big file sizes for sending as mails, i have compressed the file sizes and reduced the duration of videos.      
 This behaviour can be easily manipulated in the script itself.     
 * Also, mail can be only sent for GMAIL users as of now, this can also be changed by manipulating the Ports of all email servers and controlling their behaviours in the script.   
+
+ 
+⭐️ this Project if you liked it !
+
+
