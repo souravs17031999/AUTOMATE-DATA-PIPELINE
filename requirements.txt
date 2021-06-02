@@ -1,6 +1,6 @@
 beautifulsoup4==4.8.2
 requests==2.22.0
-urllib3==1.24.2
+urllib3==1.26.5
 Pillow>=7.1.0
 tqdm==4.41.1
 selenium==3.141.0
